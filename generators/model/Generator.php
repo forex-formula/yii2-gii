@@ -280,6 +280,7 @@ class Generator extends \yii\gii\Generator
                 $types['required'][] = $column->name;
             }
             switch ($column->type) {
+                case Schema::TYPE_TINYINT:
                 case Schema::TYPE_SMALLINT:
                 case Schema::TYPE_INTEGER:
                 case Schema::TYPE_BIGINT:
